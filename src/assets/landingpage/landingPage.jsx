@@ -1,30 +1,37 @@
-import React from "react";
-import './landingPage.css';
+import React from 'react';
+import "./LandingPage.css";
+import TestingPage from '../TestingPage';
 
-const SmartEntrancePage = () => {
+
+const LandingPage = () => {
   return (
-    <div className="page-container">
-      {/* Top Navbar */}
-      <div className="navbar">
-        <img src="https://picsum.photos/50?random=1" alt="Logo" className="logo" />
-        <h1 className="navbar-title">Smart Entrance Security</h1>
-        <img src="https://picsum.photos/50?random=2" alt="Logo" className="logo" />
-      </div>
+    <div>
+      <div className="smart-entrance-page">
+        {/* Top Navbar */}
+        <div className="navbar">
+          <img src="https://picsum.photos/seed/logo-left/80" alt="Left Logo" className="logo" />
+          <h1 className="navbar-title">Smart Entrance Security</h1>
+          <img src="https://picsum.photos/seed/logo-right/80" alt="Right Logo" className="logo" />
+        </div>
 
-      {/* Main Content */}
-      <div className="main-content">
-        <h2 className="welcome-text">Welcome To The</h2>
-        <h1 className="main-heading">SMART ENTRANCE</h1>
-        <h3 className="sub-heading">Security Solution</h3>
+        {/* Main Content */}
+        <div className="main-content">
+          <h2 className="subtitle">Welcome To The</h2>
+          <h1 className="title">SMART ENTRANCE</h1>
+          <p className="description">Security Solution</p>
 
-        <div className="button-container">
-          <div className="user-button">
-            <img src="https://picsum.photos/80?random=3" alt="Admin" className="user-image" />
-            <div className="user-label">ADMIN</div>
-          </div>
-          <div className="user-button">
-            <img src="https://picsum.photos/80?random=4" alt="Security" className="user-image" />
-            <div className="user-label">SECURITY STAFF</div>
+          <div className="role-buttons">
+            {/* Link for Admin */}
+            <a href="/TestingPage" className="role-button">
+              <img src="https://picsum.photos/seed/admin/160" alt="Admin" className="role-image" />
+              <span className="role-label">ADMIN</span>
+            </a>
+
+            {/* Link for Security Staff */}
+            <a href="/security" className="role-button">
+              <img src="https://picsum.photos/seed/security/160" alt="Security Staff" className="role-image" />
+              <span className="role-label">SECURITY STAFF</span>
+            </a>
           </div>
         </div>
       </div>
@@ -32,4 +39,4 @@ const SmartEntrancePage = () => {
   );
 };
 
-export default SmartEntrancePage;
+export default LandingPage;
