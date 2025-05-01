@@ -1,14 +1,14 @@
 import React from 'react'
 import './App.css'
-import PageConnector from './assets/pageConnector'
-
+import ComponentsPageConnecter from './ComponentsPageConnecter'
 
 
 function App() {
 
   return (
 <>
-    <PageConnector />
+    <ComponentsPageConnecter/>
+
 </>
   )
 }

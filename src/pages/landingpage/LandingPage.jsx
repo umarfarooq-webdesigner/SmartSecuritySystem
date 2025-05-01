@@ -27,10 +27,10 @@ const LandingPage = () => {
               <span className="role-label">ADMIN</span>
             </a>
 
-            {/* Link for Security Staff */}
-            <a href="/security" className="role-button">
-              <img src="https://picsum.photos/seed/security/160" alt="Security Staff" className="role-image" />
-              <span className="role-label">SECURITY STAFF</span>
+            {/* Link for User */}
+            <a href="/User" className="role-button">
+              <img src="https://picsum.photos/seed/security/160" alt="User" className="role-image" />
+              <span className="role-label">USER</span>
             </a>
           </div>
         </div>
