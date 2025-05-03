@@ -1,18 +1,14 @@
 import React from 'react';
 import "./LandingPage.css";
 import TestingPage from '../TestingPage';
-
+import Navbar from '../../components/Navbar/Navbar';
 
 const LandingPage = () => {
   return (
     <div>
       <div className="smart-entrance-page">
         {/* Top Navbar */}
-        <div className="navbar">
-          <img src="https://picsum.photos/seed/logo-left/80" alt="Left Logo" className="logo" />
-          <h1 className="navbar-title">Smart Entrance Security</h1>
-          <img src="https://picsum.photos/seed/logo-right/80" alt="Right Logo" className="logo" />
-        </div>
+      <Navbar />
 
         {/* Main Content */}
         <div className="main-content">
@@ -28,9 +24,9 @@ const LandingPage = () => {
             </a>
 
             {/* Link for User */}
-            <a href="/User" className="role-button">
-              <img src="https://picsum.photos/seed/security/160" alt="User" className="role-image" />
-              <span className="role-label">USER</span>
+            <a href="/SecurityStaffLogInPage" className="role-button">
+              <img src="https://picsum.photos/seed/security/160" alt="Security Staff LogIn" className="role-image" />
+              <span className="role-label">USERS</span>
             </a>
           </div>
         </div>

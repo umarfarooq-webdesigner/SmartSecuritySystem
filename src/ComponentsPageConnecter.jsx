@@ -4,7 +4,8 @@ import PageConnector from './pages/PageConnector'
 const ComponentsPageConnecter = () => {
   return (
 <>
-    <PageConnector />
+    {/* <PageConnector /> */}
+    <h1>hello</h1>
 
 </>
   )
